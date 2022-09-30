@@ -1,0 +1,131 @@
+body {
+    background-color: #102026;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #B5D99C;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #8C5A4F;
+    box-shadow: 0px 2px 5px #2f607498;
+    
+}
+
+nav div {
+    margin: 5px 20px 0 0;
+}
+nav a {
+    text-decoration: none;
+    color: #B5D99C;
+}
+
+nav h1 {
+    margin: 0 0 0 5px;
+}
+
+.form-container {
+    margin: 200px 0 0 35%;
+    padding: 20px 5% 20px 8%;
+    width: 17%;
+    border: 2px solid white;
+}
+
+.alerts div{
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.active_condition {
+    opacity: 1;
+}
+
+.form {
+    margin-top: 20px;
+    display: table;
+}
+
+.form label, .form input, .form button {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form button {
+    width: 177px;
+    background-color: #8C5A4F;
+    border: none;
+    box-shadow: 0px 0px 3px #8C5A4F;
+    color: lightgrey;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.form button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 230px) and (max-width: 1115px){
+    .form-container {
+        width: 30%;
+        margin: 200px 17% 0 17%;
+        padding: 20px 10% 20px 20%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 829px){
+    .form-container {
+        margin: 200px 30%;
+        padding: 0;
+        border: none;
+    }
+
+    .alerts{
+        margin-left: 30%;
+    }
+    .form input {
+        width: 300px;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .form button {
+        width: 308px;
+    }
+}
+
+@media screen and (max-width : 639px) {
+    .form-container {
+        margin: 200px 10%;
+        width: 80%;
+        padding: 0;
+        border: none;
+    }
+
+    .alerts{
+        margin-left: 0;
+    }
+    .form {
+        width: 100%;
+    }
+    .form input {
+        width: 100%;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .form button {
+        width: 100%;
+    }
+}
